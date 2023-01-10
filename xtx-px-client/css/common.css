@@ -1,0 +1,209 @@
+
+/*版心*/
+.wrapper {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+.shortcut { /*快捷导航*/
+	height: 52px;
+	background-color: #333333;
+}
+
+.shortcut .wrapper {
+    width: 1240px;
+    height: 52px;
+}
+
+/*父盒右浮，子盒左浮*/
+.shortcut ul { 
+    float: right;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.shortcut li a {
+    padding: 0 15px;
+    border-left: #666 solid 1px;
+    color: #dcdcdc;
+    font-size: 14px;
+    line-height: 52px;
+}
+
+.shortcut li:first-child a {
+    border: none;
+}
+
+#phone {
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../image/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+
+.header {
+    height: 70px;
+    margin: 30px auto;
+}
+
+.header .logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+.header .logo h1 {
+    width: 207px;
+    height: 70px;
+}
+
+.header .logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../image/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.header .nav {
+    float: left;
+    margin-left: 40px;
+    height: 70px;
+}
+
+.header .nav li {
+    float: left;
+    margin-right: 48px;
+}
+
+.header .nav a {
+    padding-bottom: 7px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+.header .nav a:hover {
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+}
+
+.header .search {
+    position: relative;
+    float: left;
+    margin: 24px 0 16px 36px;
+    width: 172px;
+    height: 30px;
+}
+
+/*提示词区还有用户输入区，就是input的内容区*/
+.header .search input {
+    padding-left: 31px;
+    width: 172px;
+    height: 28px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.header .search input::placeholder {
+    font-size: 14px;
+	color: #cccccc;
+}
+
+.header .search span {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 17px;
+    height: 17px;
+    background-image: url(../image/sprites.png);
+    background-position: -80px -70px;
+}
+
+.header .car {
+    position: relative;
+    float: left;
+    margin: 28px 0 19px 15px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../image/sprites.png);
+    background-position: -120px -70px;
+}
+
+.header .car span {
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+    width: 20px; /*定位后具有行内块性质，可设宽高*/
+	height: 15px;
+	background-color: #e26237;
+	border-radius: 8px;
+    text-align: center;
+    font-family: "PingFangSC-Medium";
+	font-size: 13px;
+	color: #ffffff;
+    line-height: 15px;
+}
+
+.footer {
+    height: 343px;
+    background: #333;
+}
+
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .topic {
+    padding: 60px 94px 54px 135px;
+    height: 172px;
+    border-bottom: 3px solid #434343;
+}
+
+.footer .topic li {
+    float: left;
+    margin-right: 303px;
+    width: 186px;
+    height: 58px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.footer .topic li:last-child {
+    margin-right: 0;
+}
+
+.footer .topic li::before {
+    display: inline-block;
+    margin-right: 16px;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-image: url(../image/sprites.png);
+    vertical-align: middle;
+}
+
+.footer .topic li:nth-child(2)::before {
+    background-position: -65px 0;
+}
+
+.footer .topic li:nth-child(3)::before {
+    background-position: -130px 0;
+}
+
+.footer .info {
+    margin: 41px auto;
+    width: 537px;
+    font-size: 14px;
+	color: #999999;
+    text-align: center;
+}
+
+.footer .info a {
+    color: #999999;
+}

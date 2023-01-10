@@ -1,0 +1,257 @@
+
+.banner {
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.banner .aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+	height: 500px;
+	background-color: rgb(0,0,0,0.8);
+}
+
+.banner .aside li {
+    position: relative;
+    padding-left: 36px;
+    width: 251px;
+	height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.banner .aside li:hover {
+    background-color: #27ba9b;
+}
+
+.banner .aside a{
+    color: #f5f5f5;
+}
+
+.banner .aside span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside a::after { /*巧用伪元素加小图标*/
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../image/sprites.png);
+    background-position: -80px -110px;
+}
+
+.banner .prev,
+.banner .next { /*对大体特征一致的元素，巧用并集选择器设置相同代码*/
+    position: absolute;
+    top: 228px;
+    width: 44px;
+    height: 44px;
+    background-color: rgb(0,0,0,0.2);
+    background-image: url(../image/sprites.png);
+    border-radius: 50%;
+}
+
+.banner .prev {
+    background-position: 15px -60px;
+    left: 260px;
+}
+
+.banner .next {
+    background-position: -24px -60px;
+    right: 10px;
+}
+/*ol+li的巧妙排布*/
+.banner ol {
+    position: absolute;
+    height: 10px;
+    left: 680px;
+    bottom: 31px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255,255,255,0.43);
+    border-radius: 50%;
+}
+/* 工作中常用current类表示当前选中 */
+.banner ol .current {
+    background-color: rgb(255,255,255,1);
+}
+
+.goods .hd {
+    padding-top: 48px;
+    padding-bottom: 37px;
+    height: 114px;
+}
+
+.goods .hd h2 {
+    float: left;
+    font-size: 29px;
+	font-weight: normal;
+}
+
+.goods .hd span {
+    float: left;
+    margin-left: 34px;
+    margin-top: 11px;
+    font-size: 16px;
+	color: #999999;
+}
+
+.goods .hd a,
+.fresh .hd>a {
+    float: right;
+    margin-top: 11px;
+    font-size: 16px;
+	color: #999999;
+}
+
+.goods .hd a::after,
+.fresh .hd>a::after {
+    display: inline-block;
+    margin-left: 14px;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background-image: url(../image/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle; /*小图标对其前面的文字(暂搞不懂)*/
+}
+
+.goods .bd li {
+    position: relative;
+    margin-right: 8px;
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.goods .bd img {
+    width: 304px;
+    /* 自然缩放，不必设高 */
+}
+
+.goods .bd h3 {
+    margin-top: 22px;
+    margin-bottom: 5px;
+    font-size: 20px;
+	font-weight: normal;
+}
+
+.goods .bd span,
+.fresh .bd span {
+    font-size: 23px;
+	letter-spacing: 0px;
+	color: #9a2e1f;
+}
+
+.goods .bd span::before,
+.fresh .bd span::before {
+    content: '￥';
+    font-size: 17px;
+	color: #9a2e1f;
+}
+
+.goods .bd div {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 28px;
+    height: 51px;
+    padding: 5px 3px;
+    border: 2px solid #27ba9b;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 19px;
+	color: #27ba9b;
+}
+
+.fresh .hd {
+    height: 96px;
+    
+}
+
+.fresh .hd h3 {
+    float: left;
+    font-size: 29px;
+    font-weight: normal;
+    line-height: 96px;
+}
+
+.fresh .group {
+    float: right;
+    margin-top: 40px;
+    margin-right: 65px;
+	height: 20px;
+}
+
+.fresh .group li {
+    float: left;
+    margin-left: 6px;
+	height: 20px;
+	font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.fresh .group li a{
+    padding: 0 7px;
+}
+
+.fresh .group li a:hover {
+    color: #fefbfc;
+    background-color: #27ba9b;
+}
+
+.fresh .hd>a {
+    margin-top: 40px;
+}
+
+.fresh .bd .left {
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+
+.fresh .bd .right {
+    float: left;
+    width: 1000px;
+    height: 610px;
+}
+
+.fresh .bd li {
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    width: 242px;
+    height: 304px;
+    padding: 8px 29px;
+}
+
+.fresh .bd .right img {
+    height: 184px;
+}
+
+.fresh .bd .right h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
